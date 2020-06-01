@@ -7,7 +7,7 @@ orbs:
 # Orchestrate or schedule a set of jobs
 workflows:
   # Name the workflow "Myname"
-  Myname:
+  Myname: echo "My name is Pravin Rai"
     # Run the welcome/run job in its own container
     jobs:
-      - echo "My name is Pravin Rai"
+      - Myname/run
